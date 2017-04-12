@@ -1,0 +1,54 @@
+body{
+    margin: 0;
+
+}
+
+.wallpaper{
+    height: 100vh;
+    width: 100vw;
+    display: block;
+    position: absolute;
+}
+
+.image{
+    background: url("guy.png")0 0 no-repeat;
+    padding: 10px;
+    height: 325px;
+    width: 150px;
+    display: block;
+    animation-name: walk;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(8, end);
+}
+
+.container{
+    margin-top: 450px;
+    height: 325px;
+    width: 150px;
+    position: fixed;
+    left: 0;
+    animation-name: container;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes walk {
+    from{background-position: 0 0 }
+    to{background-position: -1472px 0}
+}
+
+@keyframes container {
+    to{left: 100%;}
+}
+
+.flying-bird{
+    background: url("bird.png")0 0 no-repeat;
+    padding: 10px;
+    width: 150;
+    height: 151;
+    display: block;
+    animation: fligth 2s linear infinite;
+
+}
